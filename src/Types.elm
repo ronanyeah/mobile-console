@@ -1,13 +1,20 @@
-module Types exposing (Flags, Model, Msg(..))
+module Types exposing (Flags, Model, Msg(..), View(..))
 
 
 type alias Model =
-    {}
+    { view : View }
 
 
 type Msg
-    = Msg
+    = SetView View
 
 
 type alias Flags =
     {}
+
+
+type View
+    = Graphiql
+    | Data
+    | Arch
+    | Settings

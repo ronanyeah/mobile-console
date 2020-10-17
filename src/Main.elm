@@ -18,7 +18,7 @@ main =
 
 init : Flags -> ( Model, Cmd Msg )
 init _ =
-    ( {}
+    ( { view = Types.Graphiql }
     , Cmd.none
     )
 
